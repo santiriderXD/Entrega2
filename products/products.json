@@ -1,0 +1,41 @@
+[
+  {
+    "id": "3",
+    "title": "Monitor 27 pulgadas 144Hz",
+    "description": "Monitor gaming de alta tasa de refresco.",
+    "code": "MN789",
+    "price": 210,
+    "status": true,
+    "stock": 15,
+    "category": "Pantallas",
+    "thumbnails": [
+      "images/monitor.jpg"
+    ]
+  },
+  {
+    "title": "awd",
+    "description": "awda",
+    "code": "dawd",
+    "price": 12,
+    "stock": 1,
+    "category": "12",
+    "thumbnails": [
+      "1"
+    ],
+    "status": true,
+    "id": 1745952606720
+  },
+  {
+    "title": "awdaw",
+    "description": "awd",
+    "code": "adw",
+    "price": 112,
+    "stock": 133,
+    "category": "12",
+    "thumbnails": [
+      "1"
+    ],
+    "status": true,
+    "id": 1745959353395
+  }
+]

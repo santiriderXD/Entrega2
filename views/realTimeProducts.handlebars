@@ -1,0 +1,28 @@
+<h1>Lista de Productos en Tiempo Real</h1>
+
+<form id="formAgregar">
+    <input type="text" name="title" placeholder="Nombre del producto" required>
+    <input type="text" name="description" placeholder="Descripción" required>
+    <input type="text" name="code" placeholder="Código del producto" required>
+    <input type="number" name="price" step="0.01" placeholder="Precio" required>
+    <input type="number" name="stock" placeholder="Stock" required>
+    <input type="text" name="category" placeholder="Categoría" required>
+    <input type="text" name="thumbnails" placeholder="URL de imagen">
+    <button type="submit">Agregar</button>
+</form>
+
+<ul id="listaProductos">
+    {{#each products}}
+    <li>
+        <strong>{{this.title}}</strong> - ${{this.price}}<br>
+        <em>{{this.description}}</em><br>
+        Código: {{this.code}}<br>
+        Stock: {{this.stock}} - Categoría: {{this.category}}<br>
+        <img src="{{this.thumbnails.[0]}}" alt="imagen" width="100"><br>
+        <button onclick="eliminarProducto('{{this.id}}')">Eliminar</button><br><br>
+    </li>
+    {{/each}}
+</ul>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realtime.js"></script>
